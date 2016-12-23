@@ -35,7 +35,16 @@
 # s = {'name':'shengyang', 'address':'SO163BA', 'number':'07821***'}
 # for k, v in s.iteritems():
 # 	print k, '=', v
-L = (x * x for x in range(10))
-for n in L:
-	print n
+# L = (x * x for x in range(10))
+# for n in L:
+# 	print n
+def fib(max):
+	n, a, b = 0, 0, 1
+	while n < max:
+		yield b
+		a, b = b, a + b
+		n = n + 1
 
+m = fib(6)
+for x in m:
+	print x
