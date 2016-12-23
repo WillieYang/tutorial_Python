@@ -18,10 +18,20 @@
 # 	print 'int:',a , b, 'l:', l,'dic:', dic
 # parameter(1, 3, 5, life = 'sheng', will = 'yang')
 
-def iteration(n):
-	if n == 1:
-		return 1
-	return n * iteration(n-1)
+# def iteration(n):
+# 	if n == 1:
+# 		return 1
+# 	return n * iteration(n-1)
 
-f = iteration(5)
-print 'The result is', f
+# f = iteration(5)
+# print 'The result is', f
+
+# L = []
+# n = 1
+# while n < 100 :
+# 	L.append(n)
+# 	n = n + 2
+# print 'L:', L  # This loop also can be implemented by a range fucntion and for loop.
+s = {'name':'shengyang', 'address':'SO163BA', 'number':'07821***'}
+for k, v in s.iteritems():
+	print k, '=', v
