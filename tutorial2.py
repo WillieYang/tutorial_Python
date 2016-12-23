@@ -32,6 +32,10 @@
 # 	L.append(n)
 # 	n = n + 2
 # print 'L:', L  # This loop also can be implemented by a range fucntion and for loop.
-s = {'name':'shengyang', 'address':'SO163BA', 'number':'07821***'}
-for k, v in s.iteritems():
-	print k, '=', v
+# s = {'name':'shengyang', 'address':'SO163BA', 'number':'07821***'}
+# for k, v in s.iteritems():
+# 	print k, '=', v
+L = (x * x for x in range(10))
+for n in L:
+	print n
+
