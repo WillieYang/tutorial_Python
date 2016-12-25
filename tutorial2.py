@@ -38,13 +38,23 @@
 # L = (x * x for x in range(10))
 # for n in L:
 # 	print n
-def fib(max):
-	n, a, b = 0, 0, 1
-	while n < max:
-		yield b
-		a, b = b, a + b
-		n = n + 1
+# def fib(max):
+# 	n, a, b = 0, 0, 1
+# 	while n < max:
+# 		yield b
+# 		a, b = b, a + b
+# 		n = n + 1
 
-m = fib(6)
-for x in m:
-	print x
+# m = fib(6)
+# for x in m:
+# 	print x
+def higher_function(x, y, f):
+	a = f(x) + f(y)
+	return a
+def devide(m, higher_function):
+	n = 0
+	n = m / higher_function()
+	return n
+
+sum = devide(8, higher_function(4, -5, abs))
+print sum
